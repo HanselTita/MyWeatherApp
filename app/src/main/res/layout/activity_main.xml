@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/locationTV"
+        android:layout_width="332dp"
+        android:layout_height="95dp"
+        android:layout_alignTop="@+id/background"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="519dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/searching_location"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tempTV"
+        android:layout_width="313dp"
+        android:layout_height="387dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="181dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="200sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/changeLocationBtn"
+        android:layout_width="91dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="285dp"
+        android:layout_marginLeft="285dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="616dp"
+        android:background="@android:color/holo_orange_light"
+        app:srcCompat="@android:drawable/ic_menu_more" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/tempTV"
+        android:layout_alignLeft="@+id/tempTV"
+        android:layout_alignTop="@+id/tempTV"
+        android:layout_alignEnd="@+id/tempTV"
+        android:layout_alignRight="@+id/tempTV"
+        android:layout_alignBottom="@+id/tempTV"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/weatherSymbolIV"
+            android:layout_width="224dp"
+            android:layout_height="191dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="6dp"
+            app:srcCompat="@android:drawable/ic_menu_help" />
+    </FrameLayout>
+</RelativeLayout>
