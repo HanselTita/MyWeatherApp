@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">My WeatherApp</string>
+    <string name="app_name">Weather Check</string>
     <string name="searching_location">Searching Location</string>
     <string name="change_location">Change Location</string>
     <string name="enter_city_name">Enter city name</string>
+    <string name="enter_location">Enter Location...</string>
+    <string name="search">Search</string>
 
 
 </resources>

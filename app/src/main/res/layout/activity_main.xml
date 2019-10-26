@@ -6,91 +6,93 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".MainActivity">
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"/>
 
-    <TextView
-        android:id="@+id/locationTV"
-        android:layout_width="332dp"
-        android:layout_height="95dp"
-        android:layout_alignTop="@+id/background"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="43dp"
-        android:layout_marginLeft="43dp"
-        android:layout_marginTop="519dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="40dp"
-        android:text="@string/searching_location"
-        android:textColor="@android:color/holo_orange_light"
-        android:textSize="36sp"
-        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tempTV"
-        android:layout_width="313dp"
-        android:layout_height="387dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="163dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginRight="43dp"
-        android:layout_marginBottom="181dp"
-        android:gravity="center"
-        android:textColor="@android:color/holo_orange_light"
-        android:textSize="200sp"
-        android:textStyle="bold" />
-
-    <ImageButton
-        android:id="@+id/changeLocationBtn"
-        android:layout_width="91dp"
-        android:layout_height="79dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="285dp"
-        android:layout_marginLeft="285dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="616dp"
-        android:background="@android:color/holo_orange_light"
-        app:srcCompat="@android:drawable/ic_menu_more" />
-
-    <FrameLayout
+    <EditText
+        android:id="@+id/etLocation"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignStart="@+id/tempTV"
-        android:layout_alignLeft="@+id/tempTV"
-        android:layout_alignTop="@+id/tempTV"
-        android:layout_alignEnd="@+id/tempTV"
-        android:layout_alignRight="@+id/tempTV"
-        android:layout_alignBottom="@+id/tempTV"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginRight="22dp"
-        android:layout_marginBottom="5dp">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:hint="@string/enter_location"
+        android:background="@drawable/input_design"
+        android:backgroundTint="@android:color/white"/>
 
-        <ImageView
-            android:id="@+id/weatherSymbolIV"
-            android:layout_width="224dp"
-            android:layout_height="191dp"
-            android:layout_marginEnd="70dp"
-            android:layout_marginRight="70dp"
-            android:layout_marginBottom="6dp"
-            app:srcCompat="@android:drawable/ic_menu_help" />
-    </FrameLayout>
+    <Button
+        android:id="@+id/search"
+        android:layout_margin="20dp"
+        android:layout_below="@id/etLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:background="@drawable/input_design"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/search"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/inf0_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/search"
+        android:layout_margin="20dp"
+        android:background="@drawable/input_design"
+        android:backgroundTint="@android:color/white">
+
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="#214EF3"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#214EF3"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#214EF3"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/visibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#214EF3"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+
+
+
 </RelativeLayout>

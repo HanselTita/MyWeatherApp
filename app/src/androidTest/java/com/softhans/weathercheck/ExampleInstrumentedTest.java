@@ -1,4 +1,4 @@
-package com.softhans.myweatherapp;
+package com.softhans.weathercheck;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
